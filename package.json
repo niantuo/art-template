@@ -1,5 +1,5 @@
 {
-  "name": "art-template",
+  "name": "artt-template",
   "typings": "index.d.ts",
   "description": "JavaScript Template Engine",
   "homepage": "http://aui.github.com/art-template/",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "npm run build-lib && npm run build-web",
-    "build-lib": "rm -rf lib && babel src --out-dir lib",
+    "build-lib": "babel src --out-dir lib",
     "build-web": "export NODE_ENV=production && webpack",
     "dev": "babel src --watch --out-dir lib",
     "test": "export NODE_ENV=production && istanbul cover node_modules/mocha/bin/_mocha -- --ui exports --colors 'test/**/*.js'",
